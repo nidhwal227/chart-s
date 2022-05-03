@@ -62,21 +62,7 @@ function MyChart({ symbol, displayRecent }) {
     const upBorderColor = '#008F28';
     const downColor = '#ec0000';
     const downBorderColor = '#8A0000';
-    // Each item: open，close，lowest，highest
 
-    // const { isLoading, error, data: data0 } = useQuery(['repoData', symbol, DisplayRecent], () =>
-    //     fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&apikey=MRYEV0BP5ROJORBJ&' + new URLSearchParams({
-    //         symbol: symbol,
-    //         outputsize: getOutputsize(DisplayRecent)
-    //     }, ))
-    //         .then(res => res.json())
-    //         .then(res => {
-    //             console.log(res);
-    //             const entries = Object.entries(res["Time Series (Daily)"]).map(([k, v]) =>
-    //                 [k, +v["1. open"], +v["4. close"], +v["3. low"], +v["2. high"]]).reverse();
-    //             return splitData(entries);
-    //         })
-    // )
 
     const { isLoading, error, data: dataset } = useQuery(['repoData', symbol, displayRecent], () => {
         return backendAPI.get('/util/data', {
