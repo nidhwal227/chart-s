@@ -53,7 +53,7 @@ function calculateMA(dayCount, data) {
     }
     return result;
 }
-const backendAPI = axios.create({ baseURL: "http://127.0.0.1:8000/" });
+const backendAPI = axios.create({ baseURL: "https://chart-s-backend.herokuapp.com/" });
 
 function MyChart({ symbol, displayRecent }) {
 

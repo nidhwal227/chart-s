@@ -31,7 +31,7 @@ function SearchBar({ symbol, setSymbol, displayRecent, changeDisplayRecent }) {
                     checked={displayRecent}
                     onChange={(e) => changeDisplayRecent(e.target.checked)} />
                 {' '}
-                Only display last 100 data
+                Only display recent data
             </div>
 
         </div>
