@@ -121,13 +121,13 @@ function MyChart({ symbol, displayRecent }) {
             {
                 left: '12%',
                 right: '10%',
-                height: '60%'
+                height: '55%'
             },
             {
                 left: '12%',
                 right: '10%',
-                bottom: '20%',
-                height: '10%'
+                bottom: '18%',
+                height: '8%'
             }
         ],
         xAxis: [
@@ -188,7 +188,8 @@ function MyChart({ symbol, displayRecent }) {
                 show: true,
                 xAxisIndex: [0, 1],
                 type: 'slider',
-                top: '85%',
+                top: '88%',
+                height: '5%',
                 start: getZoomPosition(displayRecent),
                 end: 100,
                 backgroundColor: 'rgba(47,69,84,0)',
